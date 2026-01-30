@@ -88,7 +88,7 @@ int main() {
     gpio_write(GPIO_CLK, 0);
 
     unsigned char input = 0xE7; 
-    driver_send_byte(convert_to_gray_parallel(input));
+    driver_send_byte(gray(input));
 
     return 0;
 }
